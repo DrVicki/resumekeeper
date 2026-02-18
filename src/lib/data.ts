@@ -52,10 +52,10 @@ let resumeData: ResumeData = {
   projects: [
     {
       id: 'proj1',
-      title: 'Project Alpha',
-      description: 'A web application for managing tasks and projects, built with Next.js and Tailwind CSS.',
+      title: 'ResumeKeeper',
+      description: 'AI Resume Generator',
       evidenceType: 'url',
-      evidenceValue: 'https://github.com/example/project-alpha',
+      evidenceValue: 'https://9000-firebase-studio-1771443638627.cluster-bp7tn4kmnjchatd3dgbbvk2kko.cloudworkstations.dev',
       imageUrl: 'https://picsum.photos/seed/p1/600/400'
     },
     {
