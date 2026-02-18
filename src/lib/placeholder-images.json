@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "Abstract background for a project",
+      "imageUrl": "https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMGNvZGV8ZW58MHx8fHwxNzcxMzY5MjY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract code"
+    },
+    {
+      "id": "project-2",
+      "description": "Abstract background for another project",
+      "imageUrl": "https://images.unsplash.com/photo-1650400629494-0ae3b8bdf853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0ZWNoJTIwYnVzaW5lc3N8ZW58MHx8fHwxNzcxNDQ1Mjk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tech business"
+    },
+    {
+      "id": "project-3",
+      "description": "A person working on a laptop",
+      "imageUrl": "https://images.unsplash.com/photo-1615274821871-18e23b3bc16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsYXB0b3AlMjB3b3Jrc3BhY2V8ZW58MHx8fHwxNzcxMzQzNzE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laptop workspace"
+    },
+    {
+      "id": "project-4",
+      "description": "A planning board with sticky notes",
+      "imageUrl": "https://images.unsplash.com/photo-1676276375581-da33fe6d1c8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwbGFubmluZyUyMGJvYXJkfGVufDB8fHx8MTc3MTQ0NTI5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "planning board"
+    },
+    {
+      "id": "profile-pic",
+      "description": "A placeholder for user profile picture",
+      "imageUrl": "https://images.unsplash.com/photo-1655249481446-25d575f1c054?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcxMzQyMzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    }
+  ]
 }
