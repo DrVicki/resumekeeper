@@ -24,9 +24,11 @@ const experienceSchema = z.object({
   company: z.string().min(1, 'Company is required'),
   startDate: z.string().min(1, 'Start date is required'),
   endDate: z.string().min(1, 'End date is required'),
-  responsibilities: z
-    .array(z.string().min(1, 'Responsibility cannot be empty'))
-    .length(3, 'You must provide exactly 3 responsibilities.'),
+  responsibilities: z.tuple([
+    z.string().min(1, 'Responsibility cannot be empty'),
+    z.string().min(1, 'Responsibility cannot be empty'),
+    z.string().min(1, 'Responsibility cannot be empty'),
+  ]),
 });
 
 interface ExperienceFormProps {
@@ -58,7 +60,7 @@ export default function ExperienceForm({ experience, onSuccess }: ExperienceForm
     setIsSubmitting(true);
     try {
       if (experience) {
-        await updateExperienceAction({ id: experience.id, ...values } as Experience);
+        await updateExperienceAction({ id: experience.id, ...values });
       } else {
         await addExperienceAction(values);
       }
@@ -141,7 +143,7 @@ export default function ExperienceForm({ experience, onSuccess }: ExperienceForm
             <FormField
                 key={field.id}
                 control={form.control}
-                name={`responsibilities.${index}` as const}
+                name={`responsibilities.${index}`}
                 render={({ field }) => (
                 <FormItem>
                     <FormControl>
@@ -152,7 +154,6 @@ export default function ExperienceForm({ experience, onSuccess }: ExperienceForm
                 )}
             />
             ))}
-            {form.formState.errors.responsibilities && <FormMessage>{form.formState.errors.responsibilities.message}</FormMessage>}
         </div>
         <div className="flex justify-end">
           <Button type="submit" disabled={isSubmitting}>
