@@ -1,7 +1,7 @@
 
 # ResumeKeeper
 
-ResumeKeeper is a project for my students in the AI in ACtion Bootcamp.
+ResumeKeeper is a project for my students in the **AI in Action Bootcamp**.
 
 Using engineered prompts, they create an AI Resume Agent, which then prompts them for the information to create an awesome Resume.
 
