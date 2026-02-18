@@ -1,7 +1,7 @@
 'use client';
 
 import { z } from 'zod';
-import { useFieldArray, useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import {
   Form,
@@ -49,11 +49,6 @@ export default function ExperienceForm({ experience, onSuccess }: ExperienceForm
       endDate: experience?.endDate || '',
       responsibilities: experience?.responsibilities || ['', '', ''],
     },
-  });
-
-  const { fields } = useFieldArray({
-    control: form.control,
-    name: 'responsibilities',
   });
 
   async function onSubmit(values: z.infer<typeof experienceSchema>) {
@@ -139,11 +134,9 @@ export default function ExperienceForm({ experience, onSuccess }: ExperienceForm
         </div>
         <div className="space-y-2">
             <FormLabel>Responsibilities (must provide 3)</FormLabel>
-            {fields.map((field, index) => (
             <FormField
-                key={field.id}
                 control={form.control}
-                name={`responsibilities.${index}`}
+                name="responsibilities.0"
                 render={({ field }) => (
                 <FormItem>
                     <FormControl>
@@ -153,7 +146,30 @@ export default function ExperienceForm({ experience, onSuccess }: ExperienceForm
                 </FormItem>
                 )}
             />
-            ))}
+             <FormField
+                control={form.control}
+                name="responsibilities.1"
+                render={({ field }) => (
+                <FormItem>
+                    <FormControl>
+                    <Textarea {...field} rows={2} />
+                    </FormControl>
+                    <FormMessage />
+                </FormItem>
+                )}
+            />
+             <FormField
+                control={form.control}
+                name="responsibilities.2"
+                render={({ field }) => (
+                <FormItem>
+                    <FormControl>
+                    <Textarea {...field} rows={2} />
+                    </FormControl>
+                    <FormMessage />
+                </FormItem>
+                )}
+            />
         </div>
         <div className="flex justify-end">
           <Button type="submit" disabled={isSubmitting}>
