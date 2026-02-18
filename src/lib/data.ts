@@ -56,7 +56,7 @@ let resumeData: ResumeData = {
       description: 'AI Resume Generator',
       evidenceType: 'url',
       evidenceValue: 'https://9000-firebase-studio-1771443638627.cluster-bp7tn4kmnjchatd3dgbbvk2kko.cloudworkstations.dev',
-      imageUrl: 'https://picsum.photos/seed/p1/600/400'
+      imageUrl: 'https://i.postimg.cc/L61Yh8bG/Screenshot-2026-02-18-at-3-28-20-PM.png'
     },
     {
       id: 'proj2',
