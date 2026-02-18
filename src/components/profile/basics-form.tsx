@@ -134,7 +134,7 @@ export default function BasicsForm({ basics }: BasicsFormProps) {
               <FormItem>
                 <FormLabel>Avatar URL</FormLabel>
                 <FormControl>
-                  <Input placeholder="https://picsum.photos/seed/u1/200/200" {...field} />
+                  <Input placeholder="https://i.postimg.cc/wBhQNk4m/Vicki-Bealman-Headshot.png" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>

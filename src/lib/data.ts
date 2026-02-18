@@ -8,7 +8,7 @@ let resumeData: ResumeData = {
     location: 'San Francisco, CA',
     email: 'jane.doe@example.com',
     website: 'janedoe.dev',
-    avatarUrl: 'https://picsum.photos/seed/u1/200/200',
+    avatarUrl: 'https://i.postimg.cc/wBhQNk4m/Vicki-Bealman-Headshot.png',
   },
   about: {
     shortBio: 'Innovative Full-Stack Developer with a passion for creating beautiful and functional web applications.',

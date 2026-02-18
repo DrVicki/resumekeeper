@@ -77,7 +77,7 @@ export default function AppHeader() {
             className="overflow-hidden rounded-full"
           >
             <Image
-              src="https://picsum.photos/seed/u1/36/36"
+              src="https://i.postimg.cc/wBhQNk4m/Vicki-Bealman-Headshot.png"
               width={36}
               height={36}
               alt="Avatar"
